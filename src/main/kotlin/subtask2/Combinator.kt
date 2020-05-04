@@ -17,11 +17,7 @@ class Combinator {
 
      fun fact (n : Int) : Int {
         if((n == 0) || (n == 1)) return 1
-        var f = 1
-        for(k in 1 ..  n){
-            f*=k
-        }
-        return f
+        else return n*fact(n-1)
     }
 
 }
